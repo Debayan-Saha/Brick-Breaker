@@ -24,7 +24,7 @@ This is an implementation of an arcade game in Python3 inspired from the old cla
 11. `Red` coloured brick shows level 1 brick. After breaking this brick, player get 5 points and the brick disappears.
 12. `Yellow` coloured brick shows explosion brick. This brick has no points. After breaking this brick, all the adjacent bricks(diagonally, vertically and horizontally) disappears.
 13. `Rainbow` brick are brick which changes colour every frame of the game. When the ball hits this brick the colour becomes constant and degrades from the colour in which it was hit.
-14. The game ends when player breaks all the breakable bricks or he loses all lives.
+14. The game ends when player defeats the boss enemy i.e. the UFO.
 15. The game has 3 levels. The last level is the boss level.
 16. `X` to skip the levels.
 17. After 20 seconds in each level the bricks start to fall down.
