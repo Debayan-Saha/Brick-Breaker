@@ -23,12 +23,24 @@ This is an implementation of an arcade game in Python3 inspired from the old cla
 10. `Magenta` coloured brick shows level 2 brick. After breaking this brick, player get 5 points and colour change to `Red`.
 11. `Red` coloured brick shows level 1 brick. After breaking this brick, player get 5 points and the brick disappears.
 12. `Yellow` coloured brick shows explosion brick. This brick has no points. After breaking this brick, all the adjacent bricks(diagonally, vertically and horizontally) disappears.
-13. The game ends when player breakes all the breakable bricks or he loses all lives.
+13. `Rainbow` brick are brick which changes colour every frame of the game. When the ball hits this brick the colour becomes constant and degrades from the colour in which it was hit.
+14. The game ends when player breaks all the breakable bricks or he loses all lives.
+15. The game has 3 levels. The last level is the boss level.
+16. `X` to skip the levels.
+17. After 20 seconds in each level the bricks start to fall down.
+18. Once the lowest brick in the current brick layout reaches the paddle level, the game is over
+
+## Boss level
+1. The final level of the game has the boss enemy along with a few unbreakable bricks.
+2. The boss enemy is a UFO which flies at the top of the screen and follows the paddle
+3. The UFO drops bombs in regular intervals onto the paddle, on being hit by these bombs the paddle loses one life.
+4. The UFO has a health which reduces on hitting it directly will the ball 
+5. The UFO will spawn defensive bricks around it
 
 ## Assignment related stuff
 
 1. **Polymorphism** - Ball, Brick and Object have the `render` but it behaves differently in all of them, however, it is execueted in the same way.
-2. **Inheritance** - Paddle, Ball and Brick are inherited from same parent class `Object`
+2. **Inheritance** - Paddle, Ball, Brick and Bomb are inherited from same parent class `Object` and Rainbow & Boss are inherited from same parent class `Brick`
 3. **Encapsulation** - Every component on the board is an object of a class. This instantiation encapsulates the methods and attributes of the objects.
 4. **Abstraction** - The functions of each class hide the inner details of the function enabling users to use just the function name.
 
